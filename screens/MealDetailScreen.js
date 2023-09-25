@@ -29,19 +29,19 @@ const MealDetailScreen = ({ route, navigation }) => {
     }
   };
 
-  useLayoutEffect(() => {
-    navigation.setOptions({
-      headerRight: () => {
-        return (
-          <IconBtn
-            onPress={changeMealFavorite}
-            icon={mealIsFavorite ? 'star' : 'star-outline'}
-            color='white'
-          />
-        );
-      },
-    });
-  }, []);
+  // useLayoutEffect(() => {
+  //   navigation.setOptions({
+  //     headerRight: () => {
+  //       return (
+  //         <IconBtn
+  //           onPress={() => {}}
+  //           icon={mealIsFavorite ? 'star' : 'star-outline'}
+  //           color='white'
+  //         />
+  //       );
+  //     },
+  //   });
+  // }, []);
   return (
     <ScrollView style={styles.rootContainer}>
       <Image style={styles.image} source={{ uri: selectedMeals.imageUrl }} />
